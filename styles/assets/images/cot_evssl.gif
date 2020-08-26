@@ -1,0 +1,639 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>Debtix.biz</title>
+	<link href='styles/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='styles/custom.css' rel='stylesheet' type='text/css'>
+	<link href='styles/css/hover.css' rel='stylesheet' type='text/css'>
+	<link href='styles/animate.css' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src='styles/bootstrap.min.js' type='text/javascript'></script>
+	<script src='styles/calc.js' type='text/javascript'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="icon" href="styles/img/favicon.png" type="image/png"/>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".cal2").click(function() {
+				$(".calculate_ctn").toggle();
+				$(".calculate_ctn").addClass("animated lightSpeedIn");
+			});
+		});
+	</script>
+	
+	
+	
+				<script type="text/javascript">
+				var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+				var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+				function GetClock(){
+				var tzOffset = -5;//set this to the number of hours offset from UTC
+
+				var d=new Date();
+				var dx=d.toGMTString();
+				dx=dx.substr(0,dx.length -3);
+				d.setTime(Date.parse(dx))
+				d.setHours(d.getHours()+tzOffset);
+				var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+				var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+				if(nhour==0){ap=" AM";nhour=12;}
+				else if(nhour<12){ap=" AM";}
+				else if(nhour==12){ap=" PM";}
+				else if(nhour>12){ap=" PM";nhour-=12;}
+
+				if(nmin<=9) nmin="0"+nmin;
+
+				document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+" "+nhour+":"+nmin+ap+"";
+				}
+
+				window.onload=function(){
+				GetClock();
+				setInterval(GetClock,1000);
+				}
+				</script>
+				
+	
+	<script type="text/javascript">
+//<![CDATA[
+var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.comodo.com/" : "http://www.trustlogo.com/");
+document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script>
+
+
+</head>
+
+<body>
+	
+		<div class="headerTopContainer">
+		<div class="headerTopInner">
+			<div class="hdTopLeft">
+				<a href="?a=home" title=""></a>
+			</div>
+			<div class="hdTopRight">
+				
+								
+				
+				<div class="form">
+					<div id="clockbox" style="display: inline;"></div>
+					
+					
+									
+										<script language=javascript>
+										function checkform() {
+										  if (document.mainform.username.value=='') {
+											alert("Please type your username!");
+											document.mainform.username.focus();
+											return false;
+										  }
+										  if (document.mainform.password.value=='') {
+											alert("Please type your password!");
+											document.mainform.password.focus();
+											return false;
+										  }
+										  return true;
+										}
+										</script>
+										
+	
+					
+						<form method=post name=loginform onsubmit="return checklogin()">
+						<input type=hidden name=a value='do_login'>
+						<input type=hidden name=follow value=''>
+						<input type=hidden name=follow_id value=''>
+						<input class="user" type="text" name=username value='' placeholder="Username">
+						<input class="pass" type="password" name=password value='' placeholder="Password">
+						<input class="login" type="submit" name="" value="LOGIN">
+						
+						</form>
+						<a class="forgot" href="?a=forgot_password"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+				</div>
+				
+								
+				
+				<div class="contact">
+					<div>
+						CALL US: <span>+44 (077) 5066-5548</span>
+					</div>
+					<a id="fc" href="https://www.facebook.com/Debtix-Enterprise-LTD-1745070482442446" title="">Follow us <br>on Facebook</a>
+					<a id="fc" href="https://www.facebook.com/groups/1367743623252307" title="">Facebook<br>Group</a>
+					<a id="sk" href="skype:live:debtixenterpriceltd?call" title="">Skype <br>Chat</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="headerBotContainer">
+		<div class="headerBotInner">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">                   
+						<li><a href="?a=home">Home</a></li>
+						<li><a href="?a=cust&page=about">about the company</a></li>
+						<li><a href="?a=cust&page=affiliate">AFFILIATE PROGRAM</a></li>
+						<li><a href="?a=cust&page=investments">investments</a></li>
+						<li><a href="?a=faq">FREQUENTLY ASKED QUESTIONs</a></li>
+						<li><a href="?a=support">SUPPORT CENTER</a></li>
+						<li><a href="?a=news">news</a></li>
+						<li><a href="?a=cust&page=monitors">monitors</a></li>
+												<li><a id="signup" href="?a=signup">signup</a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+
+
+	<div class="bannerContainer">
+		<div class="bnTop">
+			<div class="bnTopInner">
+				<div class="bnContentLeft">
+					<h3>Get your <span>bitcoins</span></h3>
+					<h2>doubled</h2>
+					<p>DEBTIX ENTERPRISE LTD, <br>Company No. 10142995 .</p>
+					<a href="?a=signup" title="">get <span>started</span></a>
+				</div>
+				<div class="bnContentRight">
+					<div>
+						<div class="part1">
+							Choose from variety of Debtix plans,<br>make a deposit and enjoy profit
+						</div>
+						<div class="part2">
+							<a href="https://secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=SC5&v_search=https://debtix.biz/&x=6&y=5">
+								<img src="styles/img/img_comodo.png">
+							</a>
+							<a href="https://beta.companieshouse.gov.uk/search/companies?q=10142995">
+								<img src="styles/img/img_regis.png">
+							</a>
+							<a href="https://debtix.biz/IncorporationCertificate.pdf">
+								<img src="styles/img/img_licen.png">
+							</a>
+						</div>
+						<div class="part3">
+							get 3% affiliate commission
+						</div>
+					</div>
+				</div>
+				<div class="wraptittle">
+					
+				</div>
+			</div>
+		</div>
+		<div class="bnBot">
+			<div class="bnBotInner">
+				<div class="bnBotInner_Part">
+					<div class="animated BotPart BotPart1" >
+						<div class="tittle">
+							plan 1
+						</div>
+						<div class="content">
+							<h3>125%</h3>
+							<span></span>
+							<p>after 1 day</p>
+							<p class="small">min $10 and max $50000</p>
+						</div>
+						<div class="depos">
+							deposit included
+						</div>
+					</div>
+					<div class="animated BotPart BotPart2" >
+						<div class="tittle">
+							plan 2
+						</div>
+						<div class="content">
+							<h3>190%</h3>
+							<span></span>
+							<p>after 3 days</p>
+							<p class="small">min $10 and max $50000</p>
+						</div>
+						<div class="depos">
+							deposit included
+						</div>
+					</div>
+					<div class="animated BotPart BotPart3" >
+						<div class="tittle">
+							plan 3
+						</div>
+						<div class="content">
+							<h3>280%</h3>
+							<span></span>
+							<p>after 5 days</p>
+							<p class="small">min $10 and max $50000</p>
+						</div>
+						<div class="depos">
+							deposit included
+						</div>
+					</div>
+					<div class="animated BotPart BotPart4" >
+						<div class="tittle">
+							plan 4
+						</div>
+						<div class="content">
+							<h3>340%</h3>
+							<span></span>
+							<p>after 7 days</p>
+							<p class="small">min $10 and max $50000</p>
+						</div>
+						<div class="depos">
+							deposit included
+						</div>
+					</div>
+					<div class="animated BotPart BotPart5" >
+						<div class="tittle">
+							plan 5
+						</div>
+						<div class="content">
+							<h3>525%</h3>
+							<span></span>
+							<p>after 15 days</p>
+							<p class="small">min $10 and max $50000</p>
+						</div>
+						<div class="depos">
+							deposit included
+						</div>
+					</div>
+					<div class="animated BotPart BotPart6" >
+						<div class="tittle">
+							plan 6
+						</div>
+						<div class="content">
+							<h3>1400%</h3>
+							<span></span>
+							<p>after 30 days</p>
+							<p class="small">min $10 and max $50000</p>
+						</div>
+						<div class="depos">
+							deposit included
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="calculateContainer">
+		<div class="calculateInner">
+			<div class="calContent">
+				<span>debtix VIP plans</span>
+				<p>800% AFTER 12 DAYS<br/>
+				<span>Min.$300 - Max.$5000</span>
+				
+				</p>
+				<p>2000% AFTER 24 DAYS<br/>
+				<span>Min.$500 - Max.$15000</span>
+				
+				</p>
+			</div>
+			<div class="cal2">
+				calculate profit
+			</div>
+			<div class="calculate_ctn">
+						<select id="calc_plan">
+								<option value="1">125% after 1 day </option>
+								<option value="2">190% After 3 Days</option>
+								<option value="3">280% After 5 Days </option>
+								<option value="4">340% After 7 Days</option>
+								<option value="5">525 After 15 Days</option>
+								<option value="6">1400% After 30 Days</option>
+								<option value="7">800% AFTER 12 DAYS</option>
+								<option value="8">2000% AFTER 24 DAYS</option>
+						</select>
+					<div><label>Deposit</label><input type="text" id="inv_amount" value="100" placeholder="100"></div>
+					<div><label>Return</label><input type="text"  id="total_return" disabled="" placeholder="150"></div>
+					<div><label>Profit</label><input type="text" id="net_profit" disabled="" placeholder="50"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="contentContainer">
+		<div class="contentInner">
+			<div class="ctLeft">
+				<div class="ctLTop">
+					<h3>Welcome to Debtix</h3>
+					<p>Our company Debtix Enterprise helps you to get an incredible high return on your investments. If you don't like to waste time and if you want to earn big money easy - this program is for you. To participate in our program you need only one thing. All you need is desire to get rich. Our professional financial team and financial advisers are always at your service. We will help you to earn easy way.</p>
+				</div>
+				<div class="ctLBot">
+					<h3>about us</h3>
+					<p>Consistently profitable, Debtix is able to implement strategic investments for the benefit of our investors.We pride ourselves on the long-term relationships we build with preferred developers, to whom we offer strong financial commitment and overseas marketing support in return for priority access to the best global property investment opportunities for our clients.These opportunities are then put through a rigorous process of due diligence before being selected for presentation to investors and distributors. We provide comprehensive support throughout every stage of the investment process including, if required, the ongoing management, rental and resale of investments. To date, the value of the property our clients have invested in through us is over 6 billion across 40 markets worldwide.You can get your profit at any moment. And remember - the more you deposit, the more you earn. We have highly profitable investment plans, and you can just choose the more interesting for you. You will be surprised how many people work for our company. And you can earn a huge sum of money without any efforts. Simply deposit money and wait. All the rest will be made by our experts. They are engaged in it for all life, and we can give you guarantees that you won't risk your money. To start work with us and to do profitable investments you must read the company rules and make a deposit. Start earning money today and make your life much better with Debtix Enterprise! </p>
+					<a href="?a=cust&page=about" >more info</a>
+				</div>
+			</div>
+			<div class="ctRight">
+				<div class="ctRtop">
+					<h3>Company security</h3>
+					<p>Protected with green addressbar</p>
+				</div>
+				<p>Debtix Enterprise Limited official website is protected by 2048 bit encryption by trusted company comodo securities. Ev SSL represented by the colour green that symbolise the trusted and secured network for member to website. Every webpage of debtix.biz is secured and faithfull encryption hence all members data are secured and safe also the all deposit and withdraw from and to the website be safe ensured. </p> 
+				
+				<p> Debtix.biz is highly secured by anti ddos protection of Genius guard , that ensure that every data of the website will be secured at very high level at anytime at any place debtix.biz will be live and member can access their account anytime securely.From the very beginning we were devoted to our clients' success. So even if all you have is an original idea of starting a business of your dreams,we know how to get it started.Our support staff is working 24*7 week. feel free to contact us anytime for any question you have or any complex situation you are in, you are always welcome at Debtix.biz </p>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="featureContainer">
+		<div class="featureInner">
+			<h2 class="feature-title public-title">Our Features<span></span></h2>
+			<div class="feature-gree">
+				<p>Greenbar ev ssl</p>
+			</div>
+			<div class="feature-uk">
+				<p>UK company registration</p>
+			</div>
+			<div class="feature-gc">
+				<p>GC Licenced</p>
+			</div>
+			<div class="feature-ins">
+				<p>instant payments</p>
+			</div>
+		</div>
+	</div> <!-- end feature -->
+	
+	<div class="projectContainer">
+		<div class="projectInner">
+			<h2 class="project-title public-title">Project Statistics <span></span></h2>
+			<div class="projectStatictis">
+				<div>
+					<h3>$255492.95</h3>
+					<p>Total deposits</p>
+				</div>
+				<div>
+					<h3>1691</h3>
+					<p>Total members</p>
+				</div>
+				<div>
+					<h3>$177910.97</h3>
+					<p>Total Payments</p>
+				</div>
+				<div>
+					<h3>6</h3>
+					<p>running days</p>
+				</div>
+				<div>
+					<h3>303</h3>
+					<p>members online</p>
+				</div>
+				<div>
+					<h3>419</h3>
+					<p>visitors online</p>
+				</div>
+				<div>
+					<h3>bigken8009</h3>
+					<p>newest member</p>
+				</div>
+				<div>
+					<h3>$  20.00</h3>
+					<p>last deposit<br /><span>(hyipshaik)</span></p>
+				</div>
+				<div>
+					<h3>$ 12.48</h3>
+					<p>last withdrawal<br /><span> (naksys)</span></p>
+				</div>
+			</div>
+			<div class="projectContent">
+			  	<div class="projectTab">
+			  		<!-- Nav tabs -->
+				  	<ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#last-deposit" aria-controls="last-deposit" role="tab" data-toggle="tab">last 10 deposits</a></li>
+					    <li role="presentation"><a href="#last-withdrawn" aria-controls="last-withdrawn" role="tab" data-toggle="tab">last 10 withdraws</a></li>
+				  	</ul>
+				  	<!-- Tab panes -->
+				  	<div class="tab-content">
+				    	<div role="tabpanel" class="tab-pane active" id="last-deposit">
+				    		<table>
+				    			<tbody>
+									
+																																<tr>
+												<td>hyipshaik</td>
+												<td><span>$20.00</span></td>
+												<td><img src="images/48.gif"></td>
+											</tr>
+																						<tr>
+												<td>shydeap</td>
+												<td><span>$10.10</span></td>
+												<td><img src="images/48.gif"></td>
+											</tr>
+																						<tr>
+												<td>Kizito</td>
+												<td><span>$10.05</span></td>
+												<td><img src="images/48.gif"></td>
+											</tr>
+																						<tr>
+												<td>jessica</td>
+												<td><span>$100.00</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>rodasto</td>
+												<td><span>$25.00</span></td>
+												<td><img src="images/1001.gif"></td>
+											</tr>
+																						<tr>
+												<td>Knjaz</td>
+												<td><span>$200.00</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>wizard2442</td>
+												<td><span>$12.28</span></td>
+												<td><img src="images/43.gif"></td>
+											</tr>
+																						<tr>
+												<td>Delta47</td>
+												<td><span>$10.00</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>MakeIndMoney</td>
+												<td><span>$150.00</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>Goalball</td>
+												<td><span>$20.00</span></td>
+												<td><img src="images/43.gif"></td>
+											</tr>
+																									    			</tbody>
+				    		</table>
+				    	</div>
+				    	<div role="tabpanel" class="tab-pane" id="last-withdrawn">
+				    		<table>
+				    			<tbody>
+																																<tr>
+												<td>naksys</td>
+												<td><span>$12.48</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>naksys</td>
+												<td><span>$319.06</span></td>
+												<td><img src="images/48.gif"></td>
+											</tr>
+																						<tr>
+												<td>rarpot</td>
+												<td><span>$15.60</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>chamak</td>
+												<td><span>$10.40</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>ziloon</td>
+												<td><span>$31.20</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>tizox</td>
+												<td><span>$10.40</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>coinbash</td>
+												<td><span>$17251.15</span></td>
+												<td><img src="images/48.gif"></td>
+											</tr>
+																						<tr>
+												<td>robe</td>
+												<td><span>$10.40</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																						<tr>
+												<td>tizox</td>
+												<td><span>$10.40</span></td>
+												<td><img src="images/43.gif"></td>
+											</tr>
+																						<tr>
+												<td>drzorg</td>
+												<td><span>$105.04</span></td>
+												<td><img src="images/18.gif"></td>
+											</tr>
+																									    			</tbody>
+				    		</table>
+				    	</div>
+				  	</div>
+			  	</div>
+				<div class="projectLink">
+					<a href="?a=top10">top10 Investors</a>
+					<a href="?a=refs10">Top 10 referrals</a>
+				</div>
+			</div>
+		</div>
+	</div> <!-- end project -->
+<div class="paymentContainer">
+		<div class="paymentInner">
+			<div class="payment">
+				<a href="http://perfectmoney.is/" class="pm"></a>
+				<a href="https://blockchain.info/" class="bc"></a>
+				<a href="https://payeer.com/en/" class="pe"></a>
+			<!---	<a href="#" class="sk"></a>
+				<a href="#" class="sl"></a>
+				<a href="#" class="nl"></a> 
+				<a href="http://advcash.com/" class="adv">--></a> 
+			</div>
+			<div class="pamentSocial">
+				<a href="https://www.facebook.com/groups/1367743623252307" class="pay_fb"></a>
+				<a href="skype:live:debtixenterpriceltd?call" class="pay_tw"></a>
+			</div>
+		</div>
+	</div><!-- end paymentContainer -->
+
+	<div class="footerContainer">
+		<div class="footerInner">
+			<div class="footerPart footerPart1">
+				<p>&copy; 2016 Debtix.biz. All Rights Reserved</p>
+				<p class="footerLink"><a href="?a=rules">terms of services</a><span>|</span><a href="?a=support">Support center</a><span>|</span><a href="?a=cust&page=privacy">Privacy policy</a></p>
+			</div>
+			<div class="footerPart footerPart2">
+						
+								
+									<script language=javascript>
+										function checkform() {
+										  if (document.mainform.username.value=='') {
+											alert("Please type your username!");
+											document.mainform.username.focus();
+											return false;
+										  }
+										  if (document.mainform.password.value=='') {
+											alert("Please type your password!");
+											document.mainform.password.focus();
+											return false;
+										  }
+										  return true;
+										}
+										</script>
+										
+	
+		
+			<form method=post name=loginform2 onsubmit="return checklogin()">
+				
+				<div class="footerInput">
+			
+					
+
+						<input type=hidden name=a value='do_login'>
+						<input type=hidden name=follow value=''>
+						<input type=hidden name=follow_id value=''>
+						<input type="text" name=username value='' placeholder="Username">
+						<input type="password" name=password value='' placeholder="Password">
+						<p><a href="?a=forgot_password">Password Recovery</a></p>
+				
+				</div>
+				<div class="footerSubmit">
+					<input type="submit" value="LOGIN">
+				</div>
+					</form>
+			</div>
+			<div class="footerPart footerPart3">
+				<p><span>DEBTIX ENTERPRISE LTD</span></p>
+				<p>JOHN ECCLES HOUSE</p>
+				<p>ROBERT ROBINSON AVENU,</p>
+				<p>OXFORD SCIENCE PARK, OX4 4GP,</p>
+				<p>OXFORD,ENGLAND.</p> 
+				<p>Company No. 10142995</p> 
+				
+				
+			</div>
+			
+		</div> 
+		
+		
+	</div><!-- end footerContainer --> 
+	
+	<!--
+TrustLogo Html Builder Code:
+Shows the logo at URL https://debtix.biz/images/cot_evssl.gif
+Logo type is  ("SC5")
+Floating on the 
+//-->
+
+<div style="position:fixed; bottom:0px; right:0px;">
+
+<script type="text/javascript">TrustLogo("https://debtix.biz/images/cot_evssl.gif", "SC5", "bottomright");</script>
+	</div>
+</body>
+</html>
+
+
